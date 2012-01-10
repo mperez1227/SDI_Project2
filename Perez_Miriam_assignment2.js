@@ -6,15 +6,21 @@ Deliverable 2
 
 //alert("JavaScript works!");
 
-var day = "Friday",
-	destination = "movies",
-	movieType1 = "comedy",
-	movieType2 = "action",
-	thisFriday = true;
 
-//Procedure
+var movieType1 = "comedy";
+	movieType2 = "action";
+		thisFriday = true;
 
+//Procedure Function
+
+function dayAgreedOn (thisFriday) {
+var day = "Friday";
+var destination = "movies";
+	
 console.log("We are going out this " + day + ", so we will only go to the " + destination + ".");
+}
+
+dayAgreedOn (thisFriday);
 
 if (thisFriday === true) {
 
@@ -23,5 +29,6 @@ if (thisFriday === true) {
 } else {
 
 	console.log("We will end up watching an " + movieType2 + " film.");
+
 };
 
