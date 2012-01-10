@@ -7,20 +7,26 @@ Deliverable 2
 //alert("JavaScript works!");
 
 
-var movieType1 = "comedy";
-	movieType2 = "action";
-		thisFriday = true;
+var movieType1 = "comedy",
+	movieType2 = "action",
+	movieType3 = "drama",
+	actionFilm = '"Mission: Impossible"',
+	comedyFilm = '"Jack & Jill"',
+	dramaFilm = "Girl with the dragon tattoo",
+	destination = "movies",
+	thisWeekend = "Friday",
+	numMovieChoices = 2,
+	thisSaturday = false,
+	thisFriday = true;
 
 //Procedure Function
 
-function dayAgreedOn (thisFriday) {
-var day = "Friday";
-var destination = "movies";
+function dayAgreedOn (thisWeekend) {
 	
-console.log("We are going out this " + day + ", so we will only go to the " + destination + ".");
+console.log("We are going out this " + thisWeekend + ", so we will only go watch a movie");
 }
 
-dayAgreedOn (thisFriday);
+dayAgreedOn (thisWeekend);
 
 if (thisFriday === true) {
 
@@ -31,4 +37,29 @@ if (thisFriday === true) {
 	console.log("We will end up watching an " + movieType2 + " film.");
 
 };
+
+//Boolean Function
+
+function whichGenre (actionFilm, comedyFilm) {
+
+var majority = "Majority voted on ";
+var vote = '"Mission: Impossible"'
+var choice = majority + vote;
+
+if (numMovieChoices >= 2) {
+
+	console.log("There are two movies that we will vote on, " + actionFilm + " or " + comedyFilm + ".");
+	return choice;
+	
+	}else {
+
+	console.log("We can choose to watch a " + movieType3 + ".");
+
+}
+}
+whichGenre (actionFilm, comedyFilm);
+
+
+
+
 
