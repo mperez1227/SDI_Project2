@@ -43,7 +43,7 @@ if (thisFriday === true) {
 function whichGenre (actionFilm, comedyFilm) {
 
 var majority = "Majority voted on ";
-var vote = '"Mission: Impossible"'
+var vote = '"Mission: Impossible"';
 var choice = majority + vote;
 
 if (numMovieChoices >= 2) {
