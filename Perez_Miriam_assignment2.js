@@ -35,7 +35,7 @@ if (thisFriday === true) {
 } else {
 
 	console.log("We will end up watching an " + movieType2 + " film.");
-
+	
 };
 
 //Boolean Function
@@ -55,8 +55,21 @@ if (numMovieChoices >= 2) {
 
 var whichGenre = getWhichGenre ('"Mission: Impossible"', '"Jack & Jill"');
 console.log('Is it true that the majority chose to watch "Mission: Impossible"? ' + whichGenre);
+console.log("Now we go find our seats.")
 
+//Number Function
 
+var getNumOfSeats = function (numOfSeats) {
+	var groupCount= 1;
 
-
+while (groupCount <= 4) {
+	console.log("There are " + groupCount + " seats next to each other.");
+	groupCount ++;
+	}
+	howMany = "four";
+	return howMany;
+};
+var neededSeatAmt = getNumOfSeats(4);
+console.log("Awesome! We found a section with " + neededSeatAmt + " seats next to each other.");
+console.log("So all " + neededSeatAmt + " of us can sit together.")
 
