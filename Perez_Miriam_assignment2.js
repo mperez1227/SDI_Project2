@@ -73,3 +73,16 @@ var neededSeatAmt = getNumOfSeats(4);
 console.log("Awesome! We found a section with " + neededSeatAmt + " seats next to each other.");
 console.log("So all " + neededSeatAmt + " of us can sit together.")
 
+//String Function
+
+var getFood = function (drink, food) {
+	var boyFriend = "amazing";
+	
+	console.log("My boyfriend is " + boyFriend + ". He bought me a " + drink + " and " + food + ".");
+	awesome = "This is now my dinner.";
+	return awesome;
+};
+
+var hungry = getFood("soda", "pizza");
+console.log("Since we rushed to the movies, I didn't get to eat.");
+console.log(hungry)
