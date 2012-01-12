@@ -62,6 +62,7 @@ console.log("Now we go find our seats.")
 var getNumOfSeats = function (numOfSeats) {
 	var groupCount= 1;
 
+console.log("We need to find " + numOfSeats + " seats that are next to each other, so we start looking around.");
 while (groupCount <= 4) {
 	console.log("There are " + groupCount + " seats next to each other.");
 	groupCount ++;
@@ -86,3 +87,22 @@ var getFood = function (drink, food) {
 var hungry = getFood("soda", "pizza");
 console.log("Since we rushed to the movies, I didn't get to eat.");
 console.log(hungry)
+
+//Array Function
+
+var getDrinks = function (groupCount, placesToGo) {
+	var otherCousin = "Kathy";
+	
+	console.log("We wanted to go out for a few drinks and called my cousin " + otherCousin + ".");
+	console.log("We picked her up and now there are " + groupCount + " of us. We will go to " + placesToGo + ".");
+	console.log("My boyfriend isn't much of a drinker so he didn't have drinks and was the designated driver.");
+	console.log("I wanted to drink Mojitos and decided to drink three.");
+for (var drinks = 3; drinks > 0; drinks --) {
+	console.log("Finished my drink number " + drinks + ".");
+};
+	howMany = "We all had a fun night!";
+	return howMany;
+	
+};
+var wantDrinks = getDrinks(5, ["Fat Tuesday", " Bayside Hut", " or any near by pub"]);
+console.log(wantDrinks)
